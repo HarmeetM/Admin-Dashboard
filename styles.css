@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+h1 {
+    font-size: 54px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.sidebar img {
+    height: 54px;
+    width: 54px;
+}
+
+.sidebar {
+    padding-left: 20px;
+    padding-top: 20px;
+    background: #D946EF;
+    height: 100vh;
+}
+
+.sidebar-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    gap: 20px;
+    font-size: 36px;
+}
+
+.sidebar-tabs img {
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes main {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+a {
+    text-decoration: none;
+}
+
+a.sidebar-links{
+    color: white;
+    -webkit-text-stroke: 0.2px black;
+}
+
+a:hover.sidebar-links {
+    scale: 1.3;
+    transition-duration: 150ms;
+    transform-origin: 0% 50%;
+    color: #4A044E;
+    font-weight: 700;
+    -webkit-text-stroke: 0.4px white;
+}
+
+a:active.sidebar-links {
+    color: white;
+    -webkit-text-stroke: 0.4px black;
+    scale: 0.8;
+    transform-origin: 0% 50%;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 4.2fr;
+    padding-top: 36px;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.top-header img:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 100ms;
+}
+
+.top-header img:active {
+    scale: 0.9;
+}
+
+.magnifying-glass {
+    height: 54px;
+    width: 54px;
+    margin-right: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-bar img {
+    height: 36px;
+    width: 36px;
+}
+
+#search {
+    width: 70%;
+    padding: 10px;
+    border-radius: 1.625rem;
+    font-size: 1rem;
+    background: #F5D0FE;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    padding-right: 45px;
+    gap: 36px;
+}
+
+.notification-bell {
+    height: 36px;
+    width: 36px;
+}
+
+.notification-profile {
+    height: 63px;
+    width: 63px;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.bottom-header img {
+    height: 96px;
+    width: 96px;
+}
+
+.hello-message {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+.content-buttons {
+    padding-right: 45px;
+    width: 475px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ctn-btn {
+    border-radius: 2rem;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #86198F;
+    background: #F5D0FE;
+    cursor: pointer;
+}
+
+.ctn-btn:hover {
+    scale: 1.1;
+    transition-duration: 150ms;
+    color: black;
+}
+
+.ctn-btn:active {
+    color: #86198F;
+    scale: 0.8;
+}
+
+.content {
+    background: #F5D0FE;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 48px;
+    padding: 64px;
+    color: #701A75;
+    
+}
+
+.project-content {
+    height: 200px;
+    width: 700px;
+    background: #FDF4FF;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.project-content div {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+a.content-links {
+    font-size: 1.1rem;
+    color: inherit;
+}
+
+a:hover.content-links {
+    scale: 1.2;
+    transition-duration: 100ms;
+    color: #86198F;
+    transform-origin: 0% 50%;
+}
+
+a:active.content-links {
+    scale: 0.9;
+    color: black;
+}
+
+.content-side {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr;
+    gap: 48px;
+    padding: 64px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    color: #701A75;
+}
+
+h3 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.announcements p {
+    font-size: 1.1rem;
+}
+
+.community-day {
+    border-top: 1px solid #701A75;
+    border-bottom: 1px solid #701A75;
+    padding-top: 20px;
+}
+
+.privacy-policy {
+    padding-top: 20px;
+}
